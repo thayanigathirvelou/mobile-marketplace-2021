@@ -10,11 +10,17 @@
 
 <ion-content [fullscreen]="true">
   <ion-list class="main-header">
-    <div align="center">
+    <!--<div align="center">
     <ion-avatar>
       <img src="assets/imgs/1.jfif">
-    </ion-avatar>  
-    </div>
+    </ion-avatar>
+    </div>-->
+    <div class="container" align="center">
+      <img src="{{imgURL}}" height="200" width="200"/>
+      <br/>
+      <ion-button (click)="getCamera()">Camera</ion-button>
+      <ion-button (click)="getGallery()">Gallery</ion-button>
+    </div>  
   </ion-list>  
 
   <ion-list lines="full">
