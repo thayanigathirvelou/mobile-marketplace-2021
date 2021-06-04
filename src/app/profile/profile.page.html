@@ -1,9 +1,46 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
+ <ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      Profile
+    </ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-list class="main-header">
+    <div align="center">
+    <ion-avatar>
+      <img src="assets/imgs/1.jfif">
+    </ion-avatar>  
+    </div>
+  </ion-list>  
+
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>
+        <ion-text>Firstname</ion-text>
+        <p><ion-text color="dark">Thayani</ion-text></p>
+      </ion-label>  
+    </ion-item>
+     <ion-item>
+      <ion-label>
+        <ion-text>Lastname</ion-text>
+        <p><ion-text color="dark">Gathirvelou</ion-text></p>
+      </ion-label>  
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-text>Phone number</ion-text>
+        <p><ion-text color="dark">0773545323</ion-text></p>
+      </ion-label>  
+    </ion-item>
+  </ion-list>  
+
+  <ion-button expand="block" shape="round" (click)="editProfile">Edit profile</ion-button>
+
 
 </ion-content>
+
+
